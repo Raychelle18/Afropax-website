@@ -5,7 +5,7 @@
   display: flex;
   flex: 1;
   background-size: contain;
-  background-color: blueviolet;
+  background-color: black;
 }
 
 
@@ -28,8 +28,9 @@
   text-decoration: underline;
   font-size: 35px;
   color: rgb(8, 8, 85);
-  margin-left: 25px;
+  margin-left: 15px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .middle-section {
@@ -52,6 +53,7 @@
   width: 80px;
   border-radius: 15px;
   border-style: solid;
+  border: none;
   cursor: pointer;
 }
 
@@ -70,8 +72,28 @@
   min-width: 180px;
 }
 
+.list-container .h-tooltip {
+  position: absolute;
+  color: white;
+  background-color: rgb(68, 6, 104);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  bottom: -45px;
+  left: -50px;
+  min-width: 180px;
+}
+
 
 .list-container:hover .tooltip {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.list-container:hover .h-tooltip {
   opacity: 1;
   cursor: pointer;
 }
@@ -82,28 +104,62 @@
 
 .services-info {
   margin-top: 90px;
-  color: rgb(63, 8, 114);
+  color: rgb(0, 0, 12);
 }
 
 p {
-  margin-bottom: 60px;
-  margin-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.p1 {
+  margin-top: -10px;
+  margin-bottom: 100px;
+}
+
+.p1:hover {
+  font-weight: 700;
+}
+
+.p2 {
+  margin-bottom: 100px;
+}
+
+.p2:hover {
+  font-weight: 700;
+}
+
+.p3 {
+  margin-top: 15px;
+}
+
+.p3:hover {
+  font-weight: 700;
 }
 
 .redirect {
   display: flex;
+  justify-content: space-between;
 }
 
 .redirect-button {
-  margin-top: 90px;
+  margin-top: 120px;
   margin-left: 15px;
   margin-right: 20px;
-  height: 60px;
-  width: 120px;
+  height: 76px;
+  width: 130px;
   background-color: rgb(9, 9, 61);
   color: aqua;
   border-color: blanchedalmond;
   border-style: solid;
-  border-radius: 30px;
+  border-radius: 38px;
+  border: none;
   cursor: pointer;
+}
+
+.redirect-button:hover {
+  height: 90px;
+  width: 150px;
+  border-radius: 45px;
 }
