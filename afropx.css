@@ -1,11 +1,14 @@
+.html, body {
+  margin: 0;
+}
 .body {
   font-family: Arial, sans-serif;
-  height: 100%;
-  margin: auto;
+  height: 1000px;
+  overflow-x: hidden;
+  margin-left: 0px;
   display: flex;
+  flex-direction: row;
   flex: 1;
-  background-size: contain;
-  background-color: black;
 }
 
 
@@ -28,8 +31,8 @@
   text-decoration: underline;
   font-size: 35px;
   color: rgb(8, 8, 85);
-  margin-left: 25px;
-  margin-top: 10px;
+  margin-left: 0px;
+  margin-top: 5px;
   cursor: pointer;
 }
 
@@ -68,7 +71,7 @@
   opacity: 0;
   transition: opacity 0.15s;
   bottom: -75px;
-  left: -50px;
+  left: -120px;
   min-width: 180px;
 }
 
@@ -87,7 +90,6 @@
   min-width: 180px;
 }
 
-
 .list-container:hover .tooltip {
   opacity: 1;
   cursor: pointer;
@@ -98,37 +100,37 @@
   cursor: pointer;
 }
 
-.website-info {
-  display: flex;
-}
-
 .services-info {
-  margin-top: 90px;
+  margin-top: 28px;
   color: rgb(0, 0, 12);
+  display: flex;
+  flex-direction: row;
 }
 
-p {
+.service-paragraph {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 15px
+  margin-left: 5px;
 }
 
 
 .p1 {
-  margin-top: -10px;
-  margin-bottom: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .p1:hover {
   font-weight: 700;
+  color: brown;
 }
 
 .p2 {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .p2:hover {
   font-weight: 700;
+  color: brown;
 }
 
 .p3 {
@@ -137,17 +139,83 @@ p {
 
 .p3:hover {
   font-weight: 700;
+  color: brown;
+}
+
+.currency-group {
+ display: flex;
+ flex-direction: row;
+ flex: 1;
+ border-color: blue;
+}
+
+.currency-board {
+ display: inline-grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ margin-left: 10px;
+}
+
+.currency-board2 {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+ 
+.currency-button:hover {
+  cursor: pointer;
+  height: 160px;
+}
+ss
+.currency-button2:hover {
+  cursor: pointer;
+  height: 160px;
+}
+
+
+.currency-button {
+  display: grid;
+  background-color: rgb(9, 9, 61);
+  color: aqua;
+  height: 140px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.currency-button2 {
+  display: grid;
+  background-color: rgb(9, 9, 61);
+  color: aqua;
+  height: 140px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.terms-paragraph {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 14px;
+}
+
+.terms{
+  font-family: italic;
+}
+
+.terms:hover {
+  font-weight: 700;
+  color: rgb(59, 8, 240);
 }
 
 .redirect {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around
 }
 
 .redirect-button {
-  margin-top: 120px;
-  margin-left: 15px;
-  margin-right: 20px;
+  margin-top: auto;
+  margin-left: 35px;
+  margin-right: auto;
   height: 76px;
   width: 130px;
   background-color: rgb(9, 9, 61);
@@ -163,4 +231,26 @@ p {
   height: 90px;
   width: 150px;
   border-radius: 45px;
+}
+
+.contact-button {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.contact-container {
+  background-color: rgb(9, 9, 61);
+  color: aqua;
+  font-size: large;
+  font-weight: 700;
+  border: none;
+  border-radius: 5x;
+}
+
+.c-tooltip {
+  color: blueviolet;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 400;
 }
