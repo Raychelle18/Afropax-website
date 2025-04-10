@@ -194,6 +194,7 @@ ss
   flex: 1;
   flex-direction: row;
   margin-top: 14px;
+  margin-bottom: 10px;
 }
 
 .terms{
@@ -242,6 +243,7 @@ ss
 .contact-container {
   background-color: rgb(9, 9, 61);
   color: aqua;
+  text-decoration: underline;
   font-size: large;
   font-weight: 700;
   border: none;
